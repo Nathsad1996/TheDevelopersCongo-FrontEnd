@@ -1,5 +1,6 @@
 "use strict";
 
+// we should have global interceptors here in order to pass the Bearer Token
 import axios from "axios";
 
 axios.defaults.baseURL = 'http://localhost:5000/'
