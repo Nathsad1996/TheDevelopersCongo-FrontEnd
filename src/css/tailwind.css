@@ -3,3 +3,20 @@
 @tailwind components;
 
 @tailwind utilities;
+
+
+.input-field {
+    @apply px-4 mb-1 md:text-lg rounded-xl border-2 border-opacity-50 shadow-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-300;
+}
+
+.btn {
+    @apply px-4 py-2 mt-2 border md:text-lg font-semibold shadow-md bg-blue-400 hover:bg-blue-600 rounded-2xl focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50;
+}
+
+.menu-item {
+    @apply m-3 px-2 py-1 text-lg transition ease-in-out duration-500 hover:text-blue-600 cursor-pointer;
+}
+
+.section-home {
+    @apply flex justify-center;
+}

@@ -12,16 +12,12 @@ const state = {
 
 const mutations = {
   SET_LOGIN: (state, value) => {
-    state.isLogin = value.isLogin
-    state.username = value.username
-    state.role = value.role
+    state.isLogin = value
   }
 }
 
 const actions = {
   setLogin : ({commit}, payload) => {
-    // this function should set isLogin, role, username
-    // payload is a json object {"role": "", "username": "", isLogin: true}
     commit('SET_LOGIN', payload)
   },
 }

@@ -2,6 +2,7 @@
 
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import store from "../store/index"
 
 const routes = [
   {
@@ -23,7 +24,13 @@ const router = createRouter({
 
 // login handler
 router.beforeEach((to, from, next) => {
-  next()
+  if (store.state.isLogin === false && to.path === "/") {
+    next("/login")
+  }
+  else {
+    next()
+
+  }
 })
 
 export default router
