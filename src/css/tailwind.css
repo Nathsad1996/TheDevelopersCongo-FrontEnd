@@ -14,7 +14,7 @@
 }
 
 .menu-item {
-    @apply m-3 px-2 py-1 text-sm md:text-lg transition ease-in-out duration-500 hover:text-blue-600 cursor-pointer;
+    @apply  text-sm md:text-lg transition ease-in-out duration-500  cursor-pointer;
 }
 
 .section-home {

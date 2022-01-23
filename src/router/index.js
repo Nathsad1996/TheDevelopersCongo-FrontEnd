@@ -14,6 +14,16 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: () => import(/* webpackChunkName: "Login" */ '../views/Login.vue')
+  },
+  {
+    path: '/find-dev',
+    name: 'findDev',
+    component: () => import(/* webpackChunkName: "find-dev" */ '../views/FindDeveloper.vue')
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: () => import(/* webpackChunkName: "profile" */ '../views/Profile.vue')
   }
 ]
 
@@ -24,12 +34,12 @@ const router = createRouter({
 
 // login handler
 router.beforeEach((to, from, next) => {
-  if (store.state.isLogin === false && to.path === "/") {
-    next("/login")
+  if (from.path === "/login" && to.path !== "/login") {
+    store.dispatch('setWantToLogin', false)
+    next()
   }
   else {
     next()
-
   }
 })
 
