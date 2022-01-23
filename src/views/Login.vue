@@ -1,14 +1,17 @@
 <template>
-    <div class="container font-sans">
-        <div class="flex justify-center">
+    <div class="font-sans grid md:grid-cols-2">
+        <div class="flex h-screen">
             <div
-                class="grid grid-rows-4 text-xs shadow-xl border-2 border-opacity-50 rounded-3xl p-6 md:p-10 mt-20 grid-flow-col gap-2"
+                class="m-auto flex flex-col text-xs shadow-2xl border-2 border-opacity-50 rounded-3xl p-6 md:p-10"
             >
-                <span class="text-xs md:text-2xl md:px-10 mb-8 text-center">TheDevelopersCongo</span>
+                <span class="text-lg md:text-2xl md:px-10 mb-8 text-center">TheDevelopersCongo</span>
                 <input class="input-field" type="text" placeholder="Login" />
                 <input class="input-field" type="text" placeholder="Mot de passe" />
                 <button class="btn" @click="login">Login</button>
             </div>
+        </div>
+        <div class="w-full h-full hidden md:block bg-gray-400">
+
         </div>
     </div>
 </template>

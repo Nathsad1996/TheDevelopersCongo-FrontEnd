@@ -6,11 +6,11 @@
 
 
 .input-field {
-    @apply px-4 mb-1 md:text-lg rounded-xl border-2 border-opacity-50 shadow-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-300;
+    @apply p-2 my-1 md:p-3 md:my-2 border-2 md:border-0 md:text-sm rounded-xl shadow-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-gray-700;
 }
 
 .btn {
-    @apply px-4 py-2 mt-2 border md:text-lg font-semibold shadow-md bg-blue-400 hover:bg-blue-600 rounded-2xl focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50;
+    @apply px-2 py-2 mt-3 md:px-2 md:py-1 transition ease-in-out duration-500 md:mt-6 border md:text-lg font-semibold shadow-md bg-gray-400 hover:bg-gray-700 hover:text-white rounded-xl focus:ring-2 focus:bg-gray-700 focus:ring-opacity-50;
 }
 
 .menu-item {
